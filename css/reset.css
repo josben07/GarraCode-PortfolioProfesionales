@@ -1,0 +1,92 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HTML / BODY
+========================= */
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+body {
+    min-height: 100vh;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   MEDIA
+========================= */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+textarea {
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font: inherit;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+    list-style: none;
+}

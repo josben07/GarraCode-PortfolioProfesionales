@@ -1,0 +1,206 @@
+/* =========================
+   IMPORTS
+========================= */
+
+@import url('./variables.css');
+@import url('./reset.css');
+@import url('./hero.css');
+@import url('./animations.css');
+@import url('./responsive.css');
+
+
+/* =========================
+   GOOGLE FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+
+    overflow-x: hidden;
+
+    cursor: none;
+}
+
+/* =========================
+   GLOBAL BACKGROUND
+========================= */
+
+body::before {
+    content: '';
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(125, 162, 255, 0.10),
+            transparent 30%),
+
+        radial-gradient(circle at bottom right,
+            rgba(214, 199, 168, 0.08),
+            transparent 30%);
+
+    pointer-events: none;
+
+    z-index: -2;
+}
+
+
+/* =========================
+   NOISE TEXTURE
+========================= */
+
+body::after {
+    content: '';
+
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        url("https://www.transparenttextures.com/patterns/noise.png");
+
+    opacity: 0.03;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* Smooth Selection */
+
+::selection {
+    background: var(--color-accent);
+    color: #000;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================
+   CUSTOM CURSOR
+========================= */
+
+.custom-cursor {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    transform:
+        translate(-50%, -50%);
+
+    transition:
+        transform 0.15s ease-out,
+        width 0.3s ease,
+        height 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+/* CURSOR HOVER */
+
+.custom-cursor.active {
+
+    width: 60px;
+    height: 60px;
+
+    background:
+        rgba(214, 199, 168, 0.08);
+
+    border:
+        1px solid rgba(214, 199, 168, 0.25);
+
+}
+
+/* =========================
+   SECTION GLOBALS
+========================= */
+
+section{
+
+    position: relative;
+
+    padding:
+        10rem 6vw;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+}
+
+/* =========================
+   LENIS SCROLL CINEMATOGRAFICO
+========================= */
+
+html.lenis{
+
+    height: auto;
+
+}
+
+
+.lenis.lenis-smooth{
+
+    scroll-behavior: auto;
+
+}
+
+
+.lenis.lenis-smooth [data-lenis-prevent]{
+
+    overscroll-behavior: contain;
+
+}
+
+
+.lenis.lenis-stopped{
+
+    overflow: hidden;
+
+}

@@ -1,0 +1,382 @@
+/* =========================
+   1400px
+========================= */
+
+@media (max-width: 1400px) {
+
+    .hero-title {
+
+        font-size:
+            clamp(4rem, 10vw, 8rem);
+
+    }
+
+
+    .orb {
+
+        width: 420px;
+
+    }
+
+}
+
+
+
+/* =========================
+   1100px
+========================= */
+
+@media (max-width: 1100px) {
+
+    /* HERO */
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 5rem;
+
+        padding-top: 4rem;
+
+    }
+
+
+    .hero-visual {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .orb {
+
+        width: 360px;
+
+    }
+
+
+
+    /* PROFESSIONALS */
+
+    .professional-card,
+    .professional-card.reverse {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+    }
+
+
+    .professional-card.reverse .professional-image,
+    .professional-card.reverse .professional-info {
+
+        order: initial;
+
+    }
+
+
+
+    /* PROJECTS */
+
+    .project-card,
+    .project-card.reverse {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+    }
+
+
+    .project-card.reverse .project-image,
+    .project-card.reverse .project-content {
+
+        order: initial;
+
+    }
+
+
+
+    .project-image {
+
+        min-height: 500px;
+
+    }
+
+
+    .professional-image img {
+
+        height: 600px;
+
+    }
+
+
+    /* FOOTER */
+
+    .footer-bottom {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+}
+
+
+
+/* =========================
+   768px
+========================= */
+
+@media (max-width: 768px) {
+
+    section{
+
+        padding:
+            7rem 7vw;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        padding:
+            2rem 7vw;
+
+    }
+
+
+    .hero-title {
+
+        font-size:
+            clamp(3rem, 14vw, 6rem);
+
+    }
+
+
+    .hero-title span {
+
+        margin-left: 0;
+
+    }
+
+
+    .hero-content {
+
+        min-height: auto;
+
+    }
+
+
+    .orb {
+
+        width: 280px;
+
+    }
+
+
+
+    /* TITLES */
+
+    .section-title {
+
+        font-size:
+            clamp(2.5rem, 10vw, 4rem);
+
+    }
+
+
+    .professional-info h3 {
+
+        font-size:
+            clamp(2.5rem, 12vw, 4rem);
+
+    }
+
+
+    .project-content h3 {
+
+        font-size:
+            clamp(3rem, 14vw, 5rem);
+
+    }
+
+
+    .footer-title {
+
+        font-size:
+            clamp(3rem, 12vw, 5rem);
+
+    }
+
+
+
+    /* IMAGES */
+
+    .professional-image img {
+
+        height: 500px;
+
+    }
+
+
+    .project-image {
+
+        min-height: 420px;
+
+    }
+
+
+
+    /* FOOTER */
+
+    .footer-background-text {
+
+        font-size: 20vw;
+
+    }
+
+}
+
+
+
+/* =========================
+   540px
+========================= */
+
+@media (max-width: 540px) {
+
+    /* HERO */
+
+    .hero-top {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 1rem;
+
+    }
+
+
+    .hero-subtitle {
+
+        letter-spacing: 0.2em;
+
+    }
+
+
+    .scroll-indicator {
+
+        font-size: 0.6rem;
+
+    }
+
+
+
+    /* SECTIONS */
+
+    .professionals,
+    .portfolio {
+
+        gap: 7rem;
+
+    }
+
+
+    .professional-card {
+
+        gap: 2rem;
+
+    }
+
+
+    .project-card {
+
+        gap: 2rem;
+
+    }
+
+
+
+    /* TEXT */
+
+    .description,
+    .project-content p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+
+    }
+
+
+
+    /* IMAGES */
+
+    .professional-image {
+
+        border-radius: 24px;
+
+    }
+
+
+    .project-image {
+
+        border-radius: 24px;
+
+    }
+
+
+    .professional-image img {
+
+        height: 420px;
+
+    }
+
+
+    .project-image {
+
+        min-height: 340px;
+
+    }
+
+
+    /* FOOTER */
+
+    .footer-title {
+
+        line-height: 1;
+
+    }
+
+}
+
+/* =========================
+   FLOATING NAV MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+    .floating-nav{
+
+        right: 1rem;
+
+        padding:
+        0.8rem;
+
+    }
+
+
+    .floating-nav a{
+
+        width: 10px;
+        height: 10px;
+
+    }
+
+}
